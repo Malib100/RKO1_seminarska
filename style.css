@@ -1,0 +1,26 @@
+body{
+  padding: 10px 50px 0px 50px;
+}
+
+h2{
+  color: deeppink;
+}
+
+.h3_podnaslov{
+  color: deeppink;
+  font-style: italic;
+}
+
+.h3_primer{
+  color: deeppink;
+}
+
+p{
+  font-size: 20px;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

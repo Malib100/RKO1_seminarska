@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Seminarska naloga RKO1 2022</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+      <h3 class="h3_podnaslov">Naslov podomrežja</h3>
+      <p>Ko je omrežje podomrežno , je prvi naslov v podomrežju identifikator podomrežja in ga usmerjevalnik uporablja za preusmerjanje paketov,
+        namenjenih za to podomrežje.  Glede na kateri koli naslov v podomrežju lahko usmerjevalnik najde masko podomrežja z istim postopkom,
+        o katerem smo že razpravljali, pri poglavju kako najti masko omrežja: IN-iramo dani naslov z masko podomrežja. Bližnjice,
+        o katerih smo razpravljali v prejšnjem delu, lahko uporabimo za iskanje naslova podomrežja.</p>
+
+      <h3 class="h3_primer">Primer 5.21</h3>
+      <p>V primeru 5.19 prikazujemo, da je omrežje razdeljeno na štiri podomrežja.
+         Ker je eden od naslovov v podomrežju 2, 141.14.120.77, lahko naslov podomrežja najdemo kot:</p>
+
+      <img src="pictures/cap1.png" alt="Tu biti slika!">
+
+      <p>Vrednosti prvega, drugega in četrtega bajta se izračunajo s prvo bližnjico za operacijo IN.
+         Vrednost tretjega bajta se izračuna z uporabo druge bližnjice za operacijo IN.</p>
+
+      <img src="pictures/cap2.png" alt="Tu biti slika!">
+
+      <h3 class="h3_podnaslov">Oblikovanje podomrežja</h3>
+      <p>Zasnovanje podomrežja prikažemo, ko razpravljamo o brez razrednim naslavljanjem.
+        Ker je razredno naslavljanje poseben primer brez razrednega naslavljanja, lahko to,
+         o čem bomo kasneje razpravljali, uporabi tudi za razredno naslavljanje.</p>
+
+      <h2>Supernetting</h2>
+      <p>Podmnoževanje ni bilo mogoče v celoti rešiti težav z odpravljanjem naslovov pri razvrščanju,
+         ker večina organizacij ni želela deliti dodeljenih blokov z drugimi. Ker so bili bloki razreda C še vedno na voljo,
+         vendar velikost bloka ni ustrezala zahtevam novih organizacij, ki so se želele pridružiti internetu, je bila ena rešitev supernetting.
+         V supernettingulahko organizacija združi več blokov razreda C, da ustvari večji nabornaslovov. Z drugimi besedami, več omrežij je združenih za ustvarjanje supermreže.
+         S tem lahko organizacija zaprosi za več blokov razreda C namesto le enega. Organizaciji, ki potrebuje 1000 naslovov, je na primer mogoče dodeliti štiri bloke razreda C.</p>
+
+      <h3 class="h3_podnaslov">Supernet Mask</h3>
+      <p>A <b>supernet mask</b> is the reverse of a subnet mask. A subnet mask for class C has more
+         1s than the default mask for this class. A supernet mask for class C has less 1s than the
+         default mask for this class.</p>
+
+            supernet maska, ki združuje osem blokov v eno superblok ima tri manj 1s kot privzeta maska.</p>
+  </body>
+</html>
