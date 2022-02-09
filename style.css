@@ -1,14 +1,27 @@
 body{
   padding: 10px 50px 0px 50px;
 }
+h1{
+  color: deeppink;
+}
 
 h2{
+  color: deeppink;
+}
+
+.h2_podnaslov{
+  color: deeppink;
+  font-style: normal;
+}
+
+.h2_primer{
   color: deeppink;
 }
 
 .h3_podnaslov{
   color: deeppink;
   font-style: italic;
+  font-weight: bold;
 }
 
 .h3_primer{
@@ -18,6 +31,13 @@ h2{
   color: black;
   font-weight: normal;
   font-style: italic;
+}
+
+.normal_text{
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
 }
 
 p{
@@ -48,4 +68,22 @@ img {
   border-top-color: deeppink;
   border-bottom-style: solid;
   border-bottom-color: deeppink;
+}
+
+.grey_back{
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.ul_sq{
+  list-style-type: square;
+  color: deeppink;
+  font-size: 20px;
+}
+
+.ul_al{
+  list-style-type: lower-latin;
+  color: deeppink;
+  font-size: 20px;
+  font-weight: bold;
 }
