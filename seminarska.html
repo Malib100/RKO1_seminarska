@@ -3,76 +3,96 @@
   <head>
     <meta charset="utf-8">
     <title>Seminarska naloga RKO1 2022</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="D://Sola/RKO1/Seminarska/web/style.c">
   </head>
 
-  <body>
-      <h3 class="h3_podnaslov">Naslov podomrežja</h3>
-      <p>Ko je omrežje podomrežno, je prvi naslov v podomrežju identifikator podomrežja in
+  <body style="padding: 10px 50px 0px 50px;">
+      <h3 style="  color: deeppink;
+        font-style: italic;
+        font-weight: bold;">Naslov podomrežja</h3>
+      <p style="  font-size: 20px;
+        text-align: justify;">Ko je omrežje podomrežno, je prvi naslov v podomrežju identifikator podomrežja in
          ga usmerjevalnik uporablja za usmerjanje paketov, namenjenih temu podomrežju. Glede na kateri koli naslov v podomrežju
           lahko usmerjevalnik poišče podomrežno masko z enakim postopkom, o katerem smo razpravljali. To storimo tako da,  IN-iramo
            podani naslov povezanega z masko podomrežja. Bližnjice, ki smo jih obravnavali v prejšnjem razdelku, lahko uporabimo za iskanje
             naslova podomrežja.</p>
 
-      <h3 class="h3_primer">Primer 5.21</h3>
-      <p>V primeru 5.19 pokažemo, da je omrežje razdeljeno na štiri podomrežja.
+      <h3 style="color: deeppink;">Primer 5.21</h3>
+      <p style="  font-size: 20px;
+        text-align: justify;">V primeru 5.19 pokažemo, da je omrežje razdeljeno na štiri podomrežja.
         Ker je eden od naslovov v podomrežju 141.14.120.77, lahko najdemo naslov podomrežja kot:</p>
 
-      <img src="pictures/cap1.png" alt="Tu biti slika!">
+      <img src="D:/Sola/RKO1/Seminarska/web/pictures/pictures/cap1.png" alt="Tu biti slika!">
 
-      <p>Vrednosti prvega, drugega in četrtega bajta se izračunajo s pomočjo prve bližnjice za
+      <p style="  font-size: 20px;
+        text-align: justify;">Vrednosti prvega, drugega in četrtega bajta se izračunajo s pomočjo prve bližnjice za
          operacijo IN. Vrednost tretjega bajta se izračuna z uporabo druge bližnjice za operacijo IN.</p>
 
       <img src="pictures/cap2.png" alt="Tu biti slika!">
 
-      <h3 class="h3_podnaslov">Oblikovanje podomrežij</h3>
-      <p>Prikazali bomo, kako oblikovati podomrežje, ko razpravljamo o brez-razrednem naslavljanju.
+      <h3 style="  color: deeppink;
+        font-style: italic;
+        font-weight: bold;">Oblikovanje podomrežij</h3>
+      <p style="  font-size: 20px;
+        text-align: justify;">Prikazali bomo, kako oblikovati podomrežje, ko razpravljamo o brez-razrednem naslavljanju.
          Ker je razredno naslavljanje poseben primer brez-razrednega naslavljanja, lahko to,
          o čemer bomo razpravljali kasneje, uporabimo tudi za razredno naslavljanje.</p>
 
-      <h2>Supernetting</h2>
-      <p>Podomrežje ni moglo v celoti rešiti težav z izčrpanjem naslovov pri razrednem naslavljanju, ker večina organizacij svojih odobrenih
+      <h2 style="  color: deeppink;">Supernetting</h2>
+      <p style="  font-size: 20px;
+        text-align: justify;">Podomrežje ni moglo v celoti rešiti težav z izčrpanjem naslovov pri razrednem naslavljanju, ker večina organizacij svojih odobrenih
          blokov ni želela deliti z drugimi. Ker so bili bloki razreda C še vedno na voljo, vendar velikost bloka ni ustrezala zahtevam novih
          organizacij, ki so se želele pridružiti internetu, je bila ena od rešitev <b>super-mreža</b>. Pri super-mreži lahko organizacija združi več
           blokov razreda C, da ustvari večji obseg naslovov. Z drugimi besedami, več omrežij se združi, da se ustvari super-omrežje.
           S tem lahko organizacija zaprosi za več blokov razreda C namesto samo enega. Na primer, organizaciji, ki potrebuje 1000 naslovov,
           je mogoče dodeliti štiri bloke razreda C.</p>
 
-      <h3 class="h3_podnaslov">Supernetna maska</h3>
-      <p><b>Maska super-omrežja</b> je obratna od maske podomrežja. Maska podomrežja za razred C ima več enk kot privzeta maska za ta
+      <h3 style="  color: deeppink;
+        font-style: italic;
+        font-weight: bold;">Supernetna maska</h3>
+      <pstyle="  font-size: 20px;
+        text-align: justify;"><b>Maska super-omrežja</b> je obratna od maske podomrežja. Maska podomrežja za razred C ima več enk kot privzeta maska za ta
          razred. Maska super-omrežja za razred C ima manj enk kot privzeta maska za ta razred.</p>
 
-      <p>Slika 5.26 prikazuje razliko med masko podomrežja in masko super-omrežja. Maska podomrežja, ki razdeli blok na osem pod blokov,
+      <p style="  font-size: 20px;
+        text-align: justify;">Slika 5.26 prikazuje razliko med masko podomrežja in masko super-omrežja. Maska podomrežja, ki razdeli blok na osem pod blokov,
          ima tri več enke (2<sup>3</sup> = 8) kot privzeta maska;
          super-netna maska, ki združuje osem blokov v en super blok, ima tri manj enk od privzete maske.</p>
 
-        <hr class="hr_1">
+        <hr style="  border: 1px solid deeppink;">
 
-        <h3 class="h3_primer"><b>Slika 5.26</b>  &nbsp;&nbsp;&nbsp; <span class="title_cls">Primerjava podomrežnih, privzetih in super-netnih mask</span></h3>
+        <h3 style="color: deeppink;"><b>Slika 5.26</b>  &nbsp;&nbsp;&nbsp; <span style="  color: white;
+          font-weight: normal;
+          font-style: italic;">Primerjava podomrežnih, privzetih in super-netnih mask</span></h3>
 
-        <hr class="hr_2">
+        <hr style="  border: 3px solid deeppink;">
 
         <img src="pictures/cap3.png" alt="Tu biti slika!">
-        <hr class="hr_1">
+        <hr style="  border: 1px solid deeppink;">
         <br>
 
-        <p>Pri super-omrežju mora biti število naslovov razreda C,
+        <p style="  font-size: 20px;
+          text-align: justify;">Pri super-omrežju mora biti število naslovov razreda C,
           ki jih je mogoče združiti v super mrežo, potenca na 2. Dolžino id-ja super-omrežja lahko najdete s formulo</p>
 
-          <p class="grey_back"><i>n</i><sub>super</sub> = <i>n</i> – log<sub>2</sub><i>c</i></p>
+          <p style="background-color: darkgrey;
+          text-align: center;"><i>n</i><sub>super</sub> = <i>n</i> – log<sub>2</sub><i>c</i></p>
 
-          <p>v katerem <i>n</i><sub>super</sub> definira dolžino id super-neta v bitih in <i>c</i> definira število blokov
+          <p style="  font-size: 20px;
+            text-align: justify;">v katerem <i>n</i><sub>super</sub> definira dolžino id super-neta v bitih in <i>c</i> definira število blokov
              razreda C, ki so združeni.</p>
 
-             <p>Na žalost je super-omrežje povzročilo dve novi težavi: Prvič, število blokov, ki jih je treba združiti,
+             <p style="  font-size: 20px;
+               text-align: justify;">Na žalost je super-omrežje povzročilo dve novi težavi: Prvič, število blokov, ki jih je treba združiti,
                 mora biti potenca na 2, kar pomeni, da mora organizacija, ki potrebuje sedem blokov, dodeljenih vsaj osem blokov
                  (zapravljanje naslovov).
                 Drugič, super omrežje in podomrežje sta res zapletla usmerjanje paketov v internetu.</p>
 <br>
-                        <hr class="hr_1">
+                        <hr style="  border: 1px solid deeppink;">
 
-            <h1>5.3 BREZ-RAZREDNO NASLOVANJE</h1>
-            <p>Podomrežje in super-omrežje pri razrednem naslavljanju v resnici nista rešila problema izčrpanja naslovov
+            <h1 style="  color: deeppink;">5.3 BREZ-RAZREDNO NASLOVANJE</h1>
+            <p  style="  font-size: 20px;
+              text-align: justify;">Podomrežje in super-omrežje pri razrednem naslavljanju v resnici nista rešila problema izčrpanja naslovov
                in je otežila distribucijo naslovov in proces usmerjanja. Z rastjo interneta je postalo jasno, da je kot
                 dolgoročna rešitev potreben večji naslovni prostor. Večji naslovni prostor pa zahteva, da se poveča dolžina
                  naslovov IP, kar pomeni, da je treba spremeniti format paketov IP. Čeprav je bila rešitev za dolge razdalje
@@ -82,7 +102,8 @@
                      brezrazredno naslavljanje. Z drugimi besedami, privilegij razreda je bil odstranjen iz distribucije,
                       da bi nadomestili izčrpavanje naslova.</p>
 
-            <p>Obstajala je še ena motivacija za brezrazredno naslavljanje. V devetdesetih letih prejšnjega
+            <p style="  font-size: 20px;
+              text-align: justify;">Obstajala je še ena motivacija za brezrazredno naslavljanje. V devetdesetih letih prejšnjega
                          stoletja so ponudniki internetnih storitev (ISP) prišli do izraza. ISP je organizacija,
                           ki omogoča dostop do interneta za posameznike, mala podjetja in srednje velike organizacije,
                            ki ne želijo ustvariti internetne strani, vendar se želijo vključiti samo v internetne
@@ -91,13 +112,15 @@
                               razdeli (v skupine 1, 2, 4, 8, 16 in tako naprej), tako da gospodinjstvu ali malemu podjetju
                                ponudi vrsto naslovov. Stranke so prek klicnega modema (DSL) ali kabelskega modema povezane z
                                ISP. Vendar vsaka stranka potrebuje nekaj naslovov IPv4.</p>
-            <p>Leta 1996 so internetne oblasti napovedale novo arhitekturo, imenovano brezrazredno naslavljanje.
+            <p style="  font-size: 20px;
+              text-align: justify;">Leta 1996 so internetne oblasti napovedale novo arhitekturo, imenovano brezrazredno naslavljanje.
                Pri brezrazrednem naslavljanju se uporabljajo bloki spremenljive dolžine, ki ne pripadajo nobenemu razredu.
                 Imamo lahko blok z 1 naslovom, 2 naslovoma, 4 naslovi, 128 naslovi itd.</p>
 
-                <h2>Bloki s spremenljivo dolžino</h2>
+                <h2 style="  color: deeppink;">Bloki s spremenljivo dolžino</h2>
 
-                <p>Pri razrednem naslavljanju je bil celoten naslovni
+                <p style="  font-size: 20px;
+                  text-align: justify;">Pri razrednem naslavljanju je bil celoten naslovni
                    prostor razdeljen na pet razredov. Čeprav je bil vsaki organizaciji dodeljen en blok
                    v razredu A, B ali C, je bila velikost blokov vnaprej določena; organizacija je morala izbrati
                    eno od treh velikosti blokov. Edini blok v razredu D in edini blok v razredu E sta bila rezervirana
@@ -107,92 +130,143 @@
                        lahko dodelimo en blok naslovov. Slika 5.27 prikazuje razdelitev celotnega naslovnega prostora na bloke,
                         ki se ne prekrivajo.</p>
 
-                        <hr class="hr_1">
+                        <hr style="  border: 1px solid deeppink;">
 
-                        <h3 class="h3_primer"><b>Slika 5.27 </b>  &nbsp;&nbsp;&nbsp; <span class="title_cls">Bloki spremenljive dolžine pri brezrazrednem naslavljanju</span></h3>
+                        <h3 style="color: deeppink;"><b>Slika 5.27 </b>  &nbsp;&nbsp;&nbsp; <span style="  color: white;
+                          font-weight: normal;
+                          font-style: italic;">Bloki spremenljive dolžine pri brezrazrednem naslavljanju</span></h3>
 
-                        <hr class="hr_2">
+                        <hr style="  border: 3px solid deeppink;">
 
                         <img src="pictures/cap4.png" alt="SILIKAAAAAAAAAA!">
-                        <hr class="hr_1">
+                        <hr style="  border: 1px solid deeppink;">
                         <br>
 
-                        <h2>Dvonivojsko naslavljanje</h2>
-                        <p>Pri razrednem naslavljanju je bilo naslavljanje na dveh ravneh zagotovljeno z razdelitvijo naslova na
+                        <h2 style="  color: deeppink;">Dvonivojsko naslavljanje</h2>
+                        <p style="  font-size: 20px;
+                          text-align: justify;">Pri razrednem naslavljanju je bilo naslavljanje na dveh ravneh zagotovljeno z razdelitvijo naslova na
                            net-id in host-id. Net-id je definiral omrežje; host-id je definiral gostitelja v omrežju. Enako idejo je
                            mogoče uporabiti pri brez-razrednem naslavljanju. Ko je organizaciji dodeljen blok naslovov, je blok dejansko
                             razdeljen na dva dela, <b>predpono</b> in <b>pripono</b>. Predpona ima enako vlogo kot net-id; pripona ima enako vlogo kot host
                             -id. Vsi naslovi v bloku imajo isto predpono; vsak naslov ima drugačno pripono. Slika 5.28 prikazuje predpono in
                             pripono v brezrazrednem bloku.</p>
 
-                            <p class="pink_back">Pri brezrazrednem naslavljanju predpona definira omrežje, pripona pa gostitelja.</p>
+                            <p style="  background-color: rgba(255, 192, 203, 0.5);
+                              font-weight: bold;
+                              font-size: 20px;
+                              text-align: center;
+                              padding: 0px 30px 0px 30px;
+                              border-top-style: solid;
+                              border-top-color: deeppink;
+                              border-bottom-style: solid;
+                              border-bottom-color: deeppink;">Pri brezrazrednem naslavljanju predpona definira omrežje, pripona pa gostitelja.</p>
 
-                            <hr class="hr_1">
+                            <hr style="  border: 1px solid deeppink;">
 
-                            <h3 class="h3_primer"><b>Slika 5.28 </b>  &nbsp;&nbsp;&nbsp; <span class="title_cls">Predpona in pripona</span></h3>
+                            <h3 style="color: deeppink;"><b>Slika 5.28 </b>  &nbsp;&nbsp;&nbsp; <span style="  color: white;
+                              font-weight: normal;
+                              font-style: italic;">Predpona in pripona</span></h3>
 
-                            <hr class="hr_2">
+                            <hr style="  border: 3px solid deeppink;">
 
                             <img src="pictures/cap5.png" alt="SILIKAAAAAAAAAA!">
-                            <hr class="hr_1">
+                            <hr style="  border: 1px solid deeppink;">
 
-                            <p>Pri razrednem naslavljanju je dolžina mreže <i>n</i> odvisna od razreda naslova; lahko je samo 8,
+                            <p style="  font-size: 20px;
+                              text-align: justify;">Pri razrednem naslavljanju je dolžina mreže <i>n</i> odvisna od razreda naslova; lahko je samo 8,
                                16 ali 24. Pri brezrazrednem naslavljanju je dolžina predpone <i>n</i> odvisna od velikosti bloka;
                                 lahko je 0, 1, 2, 3, . . . , 32. Pri brezrazrednem naslavljanju se vrednost <i>n</i> imenuje <b>dolžina
                                  predpone;</b> vrednost 32 − <i>n</i> se imenuje <b>dolžina pripone</b>.</p>
 
-                                 <p class="pink_back">Dolžina predpone pri brezrazrednem naslavljanju je lahko od 1 do 32.</p>
+                                 <p style="  background-color: rgba(255, 192, 203, 0.5);
+                                   font-weight: bold;
+                                   font-size: 20px;
+                                   text-align: center;
+                                   padding: 0px 30px 0px 30px;
+                                   border-top-style: solid;
+                                   border-top-color: deeppink;
+                                   border-bottom-style: solid;
+                                   border-bottom-color: deeppink;">Dolžina predpone pri brezrazrednem naslavljanju je lahko od 1 do 32.</p>
 
-                                 <h2>Primer 5.22</h2>
-                                 <p>Kakšna je dolžina predpone in dolžina pripone, če se
+                                 <h2 style="  color: deeppink;">Primer 5.22</h2>
+                                 <p style="  font-size: 20px;
+                                   text-align: justify;">Kakšna je dolžina predpone in dolžina pripone, če se
                                     celoten internet obravnava kot en sam blok s 4.294.967.296 naslovi?</p>
 
-                                    <p><b>Rešitev</b> <br>V tem primeru je dolžina predpone 0, dolžina pripone pa 32. Vseh 32 bitov se razlikuje
+                                    <p style="  font-size: 20px;
+                                      text-align: justify;"><b>Rešitev</b> <br>V tem primeru je dolžina predpone 0, dolžina pripone pa 32. Vseh 32 bitov se razlikuje
                                        za definiranje 2<sup>32</sup> = 4.294.967.296 gostiteljev v tem posameznem bloku.</p>
 
-                                       <h2>Primer 5.23</h2>
+                                       <h2 style="  color: deeppink;">Primer 5.23</h2>
 
-                                       <p>Kakšna je dolžina predpone in dolžina pripone, če je internet
+                                       <p style="  font-size: 20px;
+                                         text-align: justify;">Kakšna je dolžina predpone in dolžina pripone, če je internet
                                           razdeljen na 4.294.967.296 blokov in ima vsak blok en sam naslov?</p>
-                                          <p><b>Rešitev</b> <br> V tem primeru je dolžina predpone za vsak blok 32, dolžina pripone pa 0. Vseh 32 bitov
+                                          <p style="  font-size: 20px;
+                                            text-align: justify;"><b>Rešitev</b> <br> V tem primeru je dolžina predpone za vsak blok 32, dolžina pripone pa 0. Vseh 32 bitov
                                              je potrebnih za definiranje 2<sup>32</sup> =
                                              4.294.967.296 blokov. Edini naslov v vsakem bloku je definiran s samim blokom.</p>
 
-                                             <h2>Primer 5.24</h2>
-                                             <p>Število naslovov v bloku je obratno odvisno od vrednosti dolžine predpone, <i>n</i>.
+                                             <h2 style="  color: deeppink;">Primer 5.24</h2>
+                                             <p style="  font-size: 20px;
+                                               text-align: justify;">Število naslovov v bloku je obratno odvisno od vrednosti dolžine predpone, <i>n</i>.
                                                 Majhen <i>n</i> pomeni večji blok; velik <i>n</i> pomeni majhen blok.</p>
 
-                                                <h2 class="h3_podnaslov">Poševni zapis</h2>
-                                                <p>Dolžina net-id pri razrednem naslavljanju ali dolžina predpone pri brezrazrednem
+                                                <h2 style="  color: deeppink;
+                                                  font-style: italic;
+                                                  font-weight: bold;">Poševni zapis</h2>
+                                                <p style="  font-size: 20px;
+                                                  text-align: justify;">Dolžina net-id pri razrednem naslavljanju ali dolžina predpone pri brezrazrednem
                                                   naslavljanju igrata zelo pomembno vlogo, ko moramo izvleči informacije o bloku iz danega naslova.
                                                    Vendar pa je tu razlika v razrednem in brezrazrednem naslavljanju.</p>
 
-                                                   <ul class="ul_sq">
-                                                     <li><span class="normal_text">Pri razrednem naslavljanju je dolžina mreže neločljivo povezana z naslovom. Glede na naslov
+                                                   <ul style="list-style-type: square;
+                                                   color: deeppink;
+                                                   font-size: 20px;">
+                                                     <li><span style="  color: white;
+                                                       font-weight: normal;
+                                                       font-style: normal;
+                                                       font-size: 20px;">Pri razrednem naslavljanju je dolžina mreže neločljivo povezana z naslovom. Glede na naslov
                                                         poznamo razred naslova, ki nam omogoča, da najdemo dolžino mreže (8, 16 ali 24).</span></li>
                                                         <br>
-                                                        <li><span class="normal_text">Pri brezrazrednem naslavljanju dolžine predpone ni mogoče najti, če nam je v bloku podan samo naslov.
+                                                        <li><span style="  color: white;
+                                                          font-weight: normal;
+                                                          font-style: normal;
+                                                          font-size: 20px;">Pri brezrazrednem naslavljanju dolžine predpone ni mogoče najti, če nam je v bloku podan samo naslov.
                                                            Podani naslov lahko pripada bloku s poljubno dolžino predpone.</span></li>
                                                    </ul>
-                                                   <p>Pri brez-razrednem naslavljanju moramo v vsak naslov vključiti dolžino predpone,
+                                                   <p style="  font-size: 20px;
+                                                     text-align: justify;">Pri brez-razrednem naslavljanju moramo v vsak naslov vključiti dolžino predpone,
                                                      če potrebujemo najti blok naslova. V tem primeru se naslovu, ločenemu s poševnico, doda dolžina predpone
                                                      <i>n</i>. Zapis se neuradno imenuje <b>poševni zapis</b>. Naslov v brez-razrednem
                                                       naslavljanju lahko nato predstavimo, kot je prikazano na sliki 5.29.</p>
 
-            <hr class="hr_1">
+            <hr style="  border: 1px solid deeppink;">
 
-            <h3 class="h3_primer"><b>Slika 5.29  </b>  &nbsp;&nbsp;&nbsp; <span class="title_cls">Poševni zapis</span></h3>
+            <h3 style="color: deeppink;"><b>Slika 5.29  </b>  &nbsp;&nbsp;&nbsp; <span style="  color: white;
+              font-weight: normal;
+              font-style: italic;">Poševni zapis</span></h3>
 
-            <hr class="hr_2">
+            <hr style="  border: 3px solid deeppink;">
 
             <img src="pictures/cap6.png" alt="SILIKAAAAAAAAAA!">
-            <hr class="hr_1">
+            <hr style="  border: 1px solid deeppink;">
 
-            <p>Poševni zapis se uradno imenuje <b>rez-razredno med domeno usmerjanje</b> ali zapis <b>CIDR</b> (izgovorjeno cider).</p>
-            <p class="pink_back">Pri brez-razrednem naslavljanju moramo poznati enega od naslovov v bloku in dolžino predpone, da definiramo blok.</p>
+            <p style="  font-size: 20px;
+              text-align: justify;">Poševni zapis se uradno imenuje <b>rez-razredno med domeno usmerjanje</b> ali zapis <b>CIDR</b> (izgovorjeno cider).</p>
+            <p style="  background-color: rgba(255, 192, 203, 0.5);
+              font-weight: bold;
+              font-size: 20px;
+              text-align: center;
+              padding: 0px 30px 0px 30px;
+              border-top-style: solid;
+              border-top-color: deeppink;
+              border-bottom-style: solid;
+              border-bottom-color: deeppink;">Pri brez-razrednem naslavljanju moramo poznati enega od naslovov v bloku in dolžino predpone, da definiramo blok.</p>
 
-            <h2>Primer 5.25</h2>
-            <p>Pri brez-razrednem naslavljanju naslov sam po sebi ne more
+            <h2 style="color: deeppink;">Primer 5.25</h2>
+            <p style="  font-size: 20px;
+              text-align: justify;">Pri brez-razrednem naslavljanju naslov sam po sebi ne more
                definirati bloka, kateremu pripada. Na primer, naslov 230.8.24.56 lahko pripada številnim blokom,
                nekateri od njih so prikazani spodaj z vrednostjo predpone, povezane s tem blokom:</p>
 
@@ -200,15 +274,23 @@
             <img src="pictures/cap7.png" alt="SLIKAAKAKAKKAA!!">
             <br>
 
-            <h2>Omrežna maska</h2>
-            <p>Ideja omrežne maske pri brez-razrednem naslavljanju je enaka tisti pri razrednem naslavljanju.
+            <h2 style="color: deeppink;">Omrežna maska</h2>
+            <p style="  font-size: 20px;
+              text-align: justify;">Ideja omrežne maske pri brez-razrednem naslavljanju je enaka tisti pri razrednem naslavljanju.
                Omrežna maska je 32-bitno število z n skrajnimi levimi biti, ki so vsi nastavljeni na 0, vsi
                ostali biti pa na 1.</p>
 
-            <h2>Primer 5.26</h2>
-            <p>Naslednji naslovi so definirani s poševnico.</p>
-            <ul class="ul_al">
-              <li><span class="normal_text">V naslovu 12.23.24.78/8 je omrežna maska 255.0.0.0. Maska ima osem enk in štiriindvajset ničl.
+            <h2 style="color: deeppink;">Primer 5.26</h2>
+            <p style="  font-size: 20px;
+              text-align: justify;">Naslednji naslovi so definirani s poševnico.</p>
+            <ul style="  list-style-type: lower-latin;
+              color: deeppink;
+              font-size: 20px;
+              font-weight: bold;">
+              <li><span style="  color: white;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 20px;">V naslovu 12.23.24.78/8 je omrežna maska 255.0.0.0. Maska ima osem enk in štiriindvajset ničl.
                   Dolžina predpone je 8; dolžina pripone je 24.</span></li>
             </ul>
 
